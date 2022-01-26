@@ -16,19 +16,19 @@
 
 - Much More
 
-## FAQ
+# FAQ
 
-*Whats SSH login?*
+  ## Whats SSH login? ##
 
 username:
 
 password:
 
-*Retropie Version Used?*
+  ## Retropie Version Used? ##
 
 4.71
 
-## Images Built on Devils Pi 
+# Images Built on Devils Pi 
 
 - Diablos Arcade 
     Availible on Arcade Punks 
