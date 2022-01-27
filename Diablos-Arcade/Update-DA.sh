@@ -31,9 +31,12 @@ sleep 2
 wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/simpbowl.mp4 
 echo "----Removing Games-----"
 sleep 2
-sudo rm /home/pi/RetroPie/roms/arcade/Tekken.zip
-sudo rm /home/pi/RetroPie/roms/arcade/Tekken2.zip
-sudo rm /home/pi/RetroPie/roms/arcade/Tekken3.zip 
+sudo rm /home/pi/RetroPie/roms/arcade/tekken.zip
+sudo rm /home/pi/RetroPie/roms/arcade/tekken2.zip
+sudo rm /home/pi/RetroPie/roms/arcade/tekken3.zip
+echo "---Adding Devils Track 2---"
+sleep 2
+wget "https://archive.org/download/devils-updates/NEFFEX - Rollin' With The Devil.mp3" -P "/home/pi/bgm/NEFFEX - Rollin' With The Devil.mp3"
 echo "----Updating Devils Box----"
 sleep 2
 sudo rm /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
