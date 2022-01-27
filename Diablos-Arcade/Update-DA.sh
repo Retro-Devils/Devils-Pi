@@ -20,7 +20,7 @@ local choice
   done
 }
 
-function update-da () {
+function update-da() {
 clear
 echo "----Backing Up & Getting New ES-Systems----"
 sleep 2
@@ -57,7 +57,7 @@ sudo apt -y update
 sudo apt -y upgrade
 }
 
-function changelog () {
+function changelog() {
 dialog --sleep 1 --title "CHANGELOG" --msgbox "
 -Added Wine support to Retropie Menu.
 -Added missing Artwork.
