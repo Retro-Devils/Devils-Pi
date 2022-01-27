@@ -13,4 +13,4 @@ SYSTEMS ON DIABLOS ARCADE
 TO UPDATE FROM V1 TO V1.1 
 
 Open terminal type:
-curl -sSL https://bit.ly/32C0KWo | bash 
+curl -sSL https://bit.ly/3IIDRA5 | bash 
