@@ -68,4 +68,4 @@ dialog --sleep 1 --title "CHANGELOG" --msgbox "
 
 }
 
-main-menu
+main_menu
