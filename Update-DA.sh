@@ -19,7 +19,7 @@ done
 
 function da-update() {
 clear
-echo "Backing Up & Getting New ES-Systems"
+echo "----Backing Up & Getting New ES-Systems----"
 sleep 2
 sudo mv home/pi/.emuationstation/es-systems.cfg -f home/pi/.emuationstation/es-systems.cfg.backup
 wget ........./es-systems.cfg -P home/pi/.emuationstation/
@@ -28,13 +28,13 @@ echo "Getting Artwork"
 sleep 2
 wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/simpbowl.mp4
 
-echo "Removing Games"
+echo "----Removing Games-----"
 sleep 2
 sudo rm /home/pi/RetroPie/roms/Tekken.zip
 sudo rm /home/pi/RetroPie/roms/Tekken2.zip
 sudo rm /home/pi/RetroPie/roms/Tekken3.zip
 
-echo "Updating Devils Box "
+echo "----Updating Devils Box----"
 sleep 2
 sudo rm /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
 cd /home/pi/Devils-Box || exit 
@@ -49,11 +49,11 @@ sleep 1
 if [ -d /home/pi/RetroPie/retropiemenu/Devils-Box/" ]; then sudo rm -fR "$HOME"/RetroPie/retropiemenu/Devils-Box/; fi 
 bash /home/pi/RetroPie/retropiemenu/Devils-Box.sh
 
-echo "Installing Devils Extra"
+echo "----Installing Devils Extra----"
 sleep 2
 curl -sSL https://git.io/J9Z8c | bash
 
-echo "Updating & Upgrading Now " 
+echo "----Updating & Upgrading Now----" 
 sleep 2
 sudo apt -y update 
 sudo apt -y upgrade
@@ -72,7 +72,7 @@ dialog --sleep 1 --title "CHANGELOG" --msgbox "
 
 -Non working games removed. 
 
--Updated and Upgraded Debian Packages " 0 0
+-Updated and Upgraded Debian Packages" 0 0
 }
 
 
