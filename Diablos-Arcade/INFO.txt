@@ -4,11 +4,13 @@ SYSTEMS ON DIABLOS ARCADE
 -Mugen 
 -Model 3
 -Arcade 
+-Openbor 
+-Neo Geo 
+-Daphne 
+
 
 
 TO UPDATE FROM V1 TO V1.1 
 
 Open terminal type:
 curl -sSL https://shorturl.at/owzNR | bash 
-
-
