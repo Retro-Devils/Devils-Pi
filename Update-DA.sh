@@ -26,47 +26,37 @@ wget ........./es-systems.cfg -P home/pi/.emuationstation/
 
 echo "Getting Artwork" 
 sleep 2
-wget ..........
-wget .....
-wget ......
+wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/simpbowl.mp4
 
 echo "Removing Games"
 sleep 2
-sudo rm home/pi/RetroPie/roms/Tekken.zip
-sudo rm home/pi/RetroPie/roms/Tekken2.zip
-sudo rm home/pi/RetroPie/roms/Tekken3.zip
+sudo rm /home/pi/RetroPie/roms/Tekken.zip
+sudo rm /home/pi/RetroPie/roms/Tekken2.zip
+sudo rm /home/pi/RetroPie/roms/Tekken3.zip
 
 echo "Updating Devils Box "
 sleep 2
-sudo rm "$HOME"/RetroPie/retropiemenu/Devils-Box.sh 
-cd "$HOME"/Devils-Box || exit 
+sudo rm /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
+cd /home/pi/Devils-Box || exit 
 git pull -f 
-cp "$HOME"/Devils-Box/Devils-Box.sh -f "$HOME"/RetroPie/retropiemenu/ 
-sudo cp "$HOME"/Devils-Box/files/box -f /usr/local/bin/ 
-sudo cp "$HOME"/Devils-Box/Devils-Box.sh -f /usr/local/bin/Devils-Box 
+cp /home/pi/Devils-Box/Devils-Box.sh -f /home/pi/RetroPie/retropiemenu/ 
+sudo cp /home/pi/Devils-Box/files/box -f /usr/local/bin/ 
+sudo cp /home/pi/Devils-Box/Devils-Box.sh -f /usr/local/bin/Devils-Box 
 sudo chmod 755 /usr/local/bin/box sudo 
 chmod 755 /usr/local/bin/Devils-Box 
-chmod 755 "$HOME"/RetroPie/retropiemenu/Devils-Box.sh 
+chmod 755 /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
 sleep 1 
-if [ -d "$HOME/RetroPie/retropiemenu/Devils-Box/" ]; then sudo rm -fR "$HOME"/RetroPie/retropiemenu/Devils-Box/; fi 
-bash "$HOME"/RetroPie/retropiemenu/Devils-Box.sh
+if [ -d /home/pi/RetroPie/retropiemenu/Devils-Box/" ]; then sudo rm -fR "$HOME"/RetroPie/retropiemenu/Devils-Box/; fi 
+bash /home/pi/RetroPie/retropiemenu/Devils-Box.sh
 
 echo "Installing Devils Extra"
 sleep 2
 curl -sSL https://git.io/J9Z8c | bash
 
-
-echo "Removing & Adding Games"
-sleep 2
-sudo rm ........roms/
-sudo rm ....,....roms/
-Wget ........................
-
 echo "Updating & Upgrading Now " 
 sleep 2
 sudo apt -y update 
 sudo apt -y upgrade
-
 }
 
 function changelog() {
