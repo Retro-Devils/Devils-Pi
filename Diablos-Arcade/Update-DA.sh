@@ -41,7 +41,8 @@ sudo chmod 755 /usr/local/bin/box
 sudo chmod 755 /usr/local/bin/Devils-Box 
 chmod 755 /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
 sleep 1 
-if [ -d /home/pi/RetroPie/retropiemenu/Devils-Box/" ]; then sudo rm -fR /home/pi/RetroPie/retropiemenu/Devils-Box/; fi bash /home/pi/RetroPie/retropiemenu/Devils-Box.sh
+if [ -d /home/pi/RetroPie/retropiemenu/Devils-Box/" ]; then sudo rm -fR /home/pi/RetroPie/retropiemenu/Devils-Box/; fi 
+bash /home/pi/RetroPie/retropiemenu/Devils-Box.sh
 
 echo "----Installing Devils Extra----"
 sleep 2
