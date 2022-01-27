@@ -2,29 +2,29 @@
 function main_menu() 
 { local choice 
 while true; do 
-choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLOS ARCADE UPDATER " \ 
+choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLO UPDATER " \ 
 --ok-label Select --cancel-label Exit \ 
 --menu "VERSION 1.0" 20 50 30 \ 
-1 "Update  " \ 
+1 "Update Diablos Arcade " \ 
 2 "View Changelog" \ 
 2>&1 >/dev/tty) 
 
 case "$choice" in 
-1) da-update  ;; 
+1) update-da ;; 
 2) changelog ;;
 *) break ;; 
 esac 
 done
 }
 
-function da-update() {
+function update-da() {
 clear
 echo "----Backing Up & Getting New ES-Systems----"
 sleep 2
 sudo mv home/pi/.emuationstation/es-systems.cfg -f home/pi/.emuationstation/es-systems.cfg.backup
 wget ........./es-systems.cfg -P home/pi/.emuationstation/
 
-echo "Getting Artwork" 
+echo "----Getting Artwork----" 
 sleep 2
 wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/simpbowl.mp4
 
