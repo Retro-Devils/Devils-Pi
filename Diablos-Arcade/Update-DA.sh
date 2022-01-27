@@ -1,6 +1,8 @@
 #!/bin/bash
+
 function main_menu() { 
 local choice 
+
 while true; do 
 choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLOS ARCADE UPDATER " \ 
 --ok-label Select --cancel-label Exit \ 
