@@ -1,7 +1,7 @@
 #!/bin/bash
 export NCURSES_NO_UTF8_ACS=1
 
-function main_menu() { 
+function main_menu () { 
 local choice 
 
   while true; do
@@ -20,23 +20,20 @@ local choice
   done
 }
 
-function update-da() {
+function update-da () {
 clear
 echo "----Backing Up & Getting New ES-Systems----"
 sleep 2
 sudo mv home/pi/.emuationstation/es-systems.cfg -f home/pi/.emuationstation/es-systems.cfg.backup
 wget https://archive.org/download/devils-updates/es_systems.cfg -P home/pi/.emuationstation/ 
-
 echo "----Getting Artwork----" 
 sleep 2
 wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/simpbowl.mp4 
-
 echo "----Removing Games-----"
 sleep 2
 sudo rm /home/pi/RetroPie/roms/arcade/Tekken.zip
 sudo rm /home/pi/RetroPie/roms/arcade/Tekken2.zip
 sudo rm /home/pi/RetroPie/roms/arcade/Tekken3.zip 
-
 echo "----Updating Devils Box----"
 sleep 2
 sudo rm /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
@@ -48,19 +45,16 @@ sudo cp /home/pi/Devils-Box/Devils-Box.sh -f /usr/local/bin/Devils-Box
 sudo chmod 755 /usr/local/bin/box 
 sudo chmod 755 /usr/local/bin/Devils-Box 
 chmod 755 /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
-
 echo "----Installing Devils Extra----"
 sleep 2
 curl -sSL https://git.io/J9Z8c | bash
-
 echo "----Updating & Upgrading Now----" 
 sleep 2
 sudo apt -y update 
 sudo apt -y upgrade
-
 }
 
-function changelog() {
+function changelog () {
 dialog --sleep 1 --title "CHANGELOG" --msgbox " 
 -Added Wine support to Retropie Menu.
 -Added missing Artwork. 
