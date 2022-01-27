@@ -24,8 +24,8 @@ function update-da() {
 clear
 echo "----Backing Up & Getting New ES-Systems----"
 sleep 2
-sudo mv home/pi/.emuationstation/es-systems.cfg -f home/pi/.emuationstation/es-systems.cfg.backup
-wget https://archive.org/download/devils-updates/es_systems.cfg -P home/pi/.emuationstation/
+sudo mv home/pi/.emulationstation/es_systems.cfg -f home/pi/.emulationstation/es_systems.cfg.backup
+wget https://archive.org/download/devils-updates/es_systems.cfg -P home/pi/.emulationstation/
 echo "----Getting Artwork----"
 sleep 2
 wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/simpbowl.mp4
