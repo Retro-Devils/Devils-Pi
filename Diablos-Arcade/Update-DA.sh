@@ -26,23 +26,20 @@ wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroP
 
 echo "----Removing Games-----"
 sleep 2
-sudo rm /home/pi/RetroPie/roms/Tekken.zip
-sudo rm /home/pi/RetroPie/roms/Tekken2.zip
-sudo rm /home/pi/RetroPie/roms/Tekken3.zip 
+sudo rm /home/pi/RetroPie/roms/arcade/Tekken.zip
+sudo rm /home/pi/RetroPie/roms/arcade/Tekken2.zip
+sudo rm /home/pi/RetroPie/roms/arcade/Tekken3.zip 
 
 echo "----Updating Devils Box----"
 sleep 2
 sudo rm /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
-cd /home/pi/Devils-Box || exit 
+cd /home/pi/Devils-Box
 git pull -f 
 cp /home/pi/Devils-Box/Devils-Box.sh -f /home/pi/RetroPie/retropiemenu/ 
 sudo cp /home/pi/Devils-Box/files/box -f /usr/local/bin/ sudo cp /home/pi/Devils-Box/Devils-Box.sh -f /usr/local/bin/Devils-Box 
 sudo chmod 755 /usr/local/bin/box 
 sudo chmod 755 /usr/local/bin/Devils-Box 
 chmod 755 /home/pi/RetroPie/retropiemenu/Devils-Box.sh 
-sleep 1 
-if [ -d /home/pi/RetroPie/retropiemenu/Devils-Box/" ]; then sudo rm -fR /home/pi/RetroPie/retropiemenu/Devils-Box/; fi 
-bash /home/pi/RetroPie/retropiemenu/Devils-Box.sh
 
 echo "----Installing Devils Extra----"
 sleep 2
