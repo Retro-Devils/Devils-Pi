@@ -1,7 +1,14 @@
 ----Diablos Arcade----Version 1.0----
 
+SYSTEMS ON DIABLOS ARCADE 
+-Mugen 
+-Model 3
+-Arcade 
+
 
 TO UPDATE FROM V1 TO V1.1 
 
 Open terminal type:
-curl -sSL shorturl.at/owzNR | bash 
+curl -sSL https://shorturl.at/owzNR | bash 
+
+
