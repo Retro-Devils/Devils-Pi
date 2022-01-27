@@ -56,17 +56,11 @@ sudo apt -y upgrade
 
 function changelog() {
 dialog --sleep 1 --title "CHANGELOG" --msgbox " 
-
 -Added Wine support to Retropie Menu.
-
 -Added missing Artwork. 
-
 -Devils Box Updated. 
-
 -Devils Extras Installed. 
-
 -Non working games removed. 
-
 -Updated and Upgraded Debian Packages" 0 0
 
 }
