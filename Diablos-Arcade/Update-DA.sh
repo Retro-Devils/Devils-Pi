@@ -2,7 +2,7 @@
 export NCURSES_NO_UTF8_ACS=1
 
 function main_menu() {
-local choice 
+local choice
 
   while true; do
     choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLOS ARCADE UPDATER" \
