@@ -2,9 +2,9 @@
 function main_menu() 
 { local choice 
 while true; do 
-choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLO UPDATER " \ 
+choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLOS ARCADE UPDATER " \ 
 --ok-label Select --cancel-label Exit \ 
---menu "VERSION 1.0" 20 50 30 \ 
+--menu "V1.0 TO V1.1" 20 50 30 \ 
 1 "Update Diablos Arcade " \ 
 2 "View Changelog" \ 
 2>&1 >/dev/tty) 
@@ -22,7 +22,7 @@ clear
 echo "----Backing Up & Getting New ES-Systems----"
 sleep 2
 sudo mv home/pi/.emuationstation/es-systems.cfg -f home/pi/.emuationstation/es-systems.cfg.backup
-wget ........./es-systems.cfg -P home/pi/.emuationstation/
+wget https://archive.org/download/devils-updates/es_systems.cfg -P home/pi/.emuationstation/
 
 echo "----Getting Artwork----" 
 sleep 2
