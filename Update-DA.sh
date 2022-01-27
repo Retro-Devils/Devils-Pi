@@ -68,9 +68,9 @@ dialog --sleep 1 --title "CHANGELOG" --msgbox "
 
 -Devils Box Updated.
 
--Deviks Extras Installed.
+-Devils Extras Installed.
 
--Non working games replaced. 
+-Non working games removed. 
 
 -Updated and Upgraded Debian Packages " 0 0
 }
