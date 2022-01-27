@@ -25,10 +25,10 @@ clear
 echo "----Backing Up & Getting New ES-Systems----"
 sleep 2
 sudo mv /home/pi/.emulationstation/es_systems.cfg -f /home/pi/.emulationstation/es_systems.backup
-wget https://archive.org/download/devils-updates/es_systems.cfg -P home/pi/.emulationstation/
+wget https://archive.org/download/devils-updates/es_systems.cfg -P /home/pi/.emulationstation/
 echo "----Getting Artwork----"
 sleep 2
-wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/simpbowl.mp4
+wget https://archive.org/download/devils-updates/simpbowl.mp4 -P /home/pi/RetroPie/roms/arcade/snap/
 echo "----Removing Games-----"
 sleep 2
 sudo rm /home/pi/RetroPie/roms/arcade/tekken.zip
