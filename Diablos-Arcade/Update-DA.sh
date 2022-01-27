@@ -6,7 +6,7 @@ local choice
 
   while true; do
     choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLOS ARCADE UPDATER" \
-      --ok-label Select --cancel-label Exit-Devils-Box \
+      --ok-label Select --cancel-label Exit \
       --menu "V1.0 TO V1.1" 20 50 30 \
       1 "Update Diablos Arcade " \
       2 "View Changelog" \
