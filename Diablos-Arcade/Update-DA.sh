@@ -4,21 +4,24 @@ export NCURSES_NO_UTF8_ACS=1
 function main_menu() { 
 local choice 
 
-while true; do 
-choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLOS ARCADE UPDATER " \ 
---ok-label Select --cancel-label Exit \ 
---menu "V1.0 TO V1.1" 20 50 30 \ 
-1 "Update Diablos Arcade " \ 
-2 "View Changelog" \ 
-2>&1 >/dev/tty) 
+function main_menu() {
+  local choice
 
-case "$choice" in 
-1) update-da ;; 
-2) changelog ;;
-*) break ;; 
-esac 
-done
-} 
+  while true; do
+    choice=$(dialog --backtitle "$BACKTITLE" --title "DIABLOS ARCADE UPDATER" \
+      --ok-label Select --cancel-label Exit-Devils-Box \
+      --menu "V1.0 TO V1.1" 20 50 30 \
+      1 "Update Diablos Arcade " \
+      2 "View Changelog" \
+      2>&1 >/dev/tty)
+
+    case "$choice" in
+    1) update-da ;;
+    2) changelog ;;
+    *) break ;;
+    esac
+  done
+}
 
 function update-da() {
 clear
