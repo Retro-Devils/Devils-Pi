@@ -19,16 +19,22 @@ done
 
 function da-update() {
 clear
-echo "Backing Up & Getting New Es-Systems"
+echo "Backing Up & Getting New ES-Systems"
 sleep 2
-sudo mv $HOME/.emuationstation/es-systems.cfg -f $HOME/.emuationstation/es-systems.cfg.backup
-wget ........./es-systems.cfg -P $HOME/.emuationstation/
+sudo mv home/pi/.emuationstation/es-systems.cfg -f home/pi/.emuationstation/es-systems.cfg.backup
+wget ........./es-systems.cfg -P home/pi/.emuationstation/
 
 echo "Getting Artwork" 
 sleep 2
 wget ..........
 wget .....
 wget ......
+
+echo "Removing Games"
+sleep 2
+sudo rm home/pi/RetroPie/roms/Tekken.zip
+sudo rm home/pi/RetroPie/roms/Tekken2.zip
+sudo rm home/pi/RetroPie/roms/Tekken3.zip
 
 echo "Updating Devils Box "
 sleep 2
@@ -48,6 +54,7 @@ bash "$HOME"/RetroPie/retropiemenu/Devils-Box.sh
 echo "Installing Devils Extra"
 sleep 2
 curl -sSL https://git.io/J9Z8c | bash
+
 
 echo "Removing & Adding Games"
 sleep 2
