@@ -1,7 +1,7 @@
 #!/bin/bash
 export NCURSES_NO_UTF8_ACS=1
 
-function main_menu () {
+function main_menu() {
 local choice 
 
   while true; do
