@@ -3,12 +3,8 @@ export NCURSES_NO_UTF8_ACS=1
 
 rst="$(tput sgr0)"
 fgred="${rst}$(tput setaf 1)" # Red
-fggrn="${rst}$(tput setaf 2)" # Green
-fgylw="${rst}$(tput setaf 3)" # Yellow
 bld="$(tput bold)"
 bfgred="${bld}$(tput setaf 1)"
-bfggrn="${bld}$(tput setaf 2)"
-bfgylw="${bld}$(tput setaf 3)"
 
 function main_menu() {
 local choice 
