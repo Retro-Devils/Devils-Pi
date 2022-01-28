@@ -1,6 +1,15 @@
 #!/bin/bash
 export NCURSES_NO_UTF8_ACS=1
 
+rst="$(tput sgr0)"
+fgred="${rst}$(tput setaf 1)" # Red
+fggrn="${rst}$(tput setaf 2)" # Green
+fgylw="${rst}$(tput setaf 3)" # Yellow
+bld="$(tput bold)"
+bfgred="${bld}$(tput setaf 1)"
+bfggrn="${bld}$(tput setaf 2)"
+bfgylw="${bld}$(tput setaf 3)"
+
 function main_menu() {
 local choice 
 
@@ -22,7 +31,7 @@ local choice
 
 function update-da() {
 clear
-echo "----Backing Up & Getting New ES-Systems----"
+echo ${bld}$(tput setaf 1) "----Backing Up & Getting New ES-Systems----"
 sleep 2
 mv /home/pi/.emulationstation/es_systems.cfg -f /home/pi/.emulationstation/backups/es_systems.backup
 sleep 1
