@@ -49,11 +49,7 @@ sudo cp /home/pi/Devils-Box/Devils-Box.sh -f /usr/local/bin/Devils-Box
 sudo chmod 755 /usr/local/bin/box
 sudo chmod 755 /usr/local/bin/Devils-Box
 chmod 755 /home/pi/RetroPie/retropiemenu/Devils-Box.sh
-echo "----Installing Devils Extra----"
-sleep 2
-curl -sSL https://git.io/J9Z8c | bash
-echo "----Updating & Upgrading Now----"
-sleep 2
+echo "Updating & Upgrading"
 sudo apt -y update 
 sudo apt -y upgrade
 }
