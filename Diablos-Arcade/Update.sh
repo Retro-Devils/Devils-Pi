@@ -29,6 +29,7 @@ function update-da() {
 clear
 echo ${bld}$(tput setaf 1) "----Backing Up & Getting New ES-Systems----"
 sleep 2
+mkdir /home/pi/.emulationstation/backups
 mv /home/pi/.emulationstation/es_systems.cfg -f /home/pi/.emulationstation/backups/es_systems.backup
 sleep 1
 wget https://archive.org/download/devils-updates/es_systems.cfg -P /home/pi/.emulationstation/
