@@ -41,6 +41,7 @@ sleep 2
 sudo rm /home/pi/RetroPie/roms/arcade/tekken.zip
 sudo rm /home/pi/RetroPie/roms/arcade/tekken2.zip
 sudo rm /home/pi/RetroPie/roms/arcade/tekken3.zip
+sleep 2 
 echo "---Adding Devils Track 2---"
 sleep 2
 wget "https://archive.org/download/devils-updates/Music/NEFFEX - Rollin' With The Devil.mp3" -P "/home/pi/bgm/NEFFEX - Rollin' With The Devil.mp3"
@@ -55,6 +56,7 @@ sudo cp /home/pi/Devils-Box/Devils-Box.sh -f /usr/local/bin/Devils-Box
 sudo chmod 755 /usr/local/bin/box
 sudo chmod 755 /usr/local/bin/Devils-Box
 chmod 755 /home/pi/RetroPie/retropiemenu/Devils-Box.sh
+sleep 2
 echo "Updating & Upgrading"
 sudo apt -y update 
 sudo apt -y upgrade
