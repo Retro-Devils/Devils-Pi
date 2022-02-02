@@ -6,6 +6,12 @@ fgred="${rst}$(tput setaf 1)" # Red
 bld="$(tput bold)"
 bfgred="${bld}$(tput setaf 1)"
 
+dialog  --sleep 1 --title "Diablos Arcade Updater" --msgbox " 
+-------------------------------
+     ATTENTION/WARNING
+-------------------------------
+-This is built for Diablos Arcade.
+-DO NOT USE ON OTHER IMAGES" 0 0
 function main_menu() {
 local choice 
 
