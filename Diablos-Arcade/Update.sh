@@ -31,7 +31,7 @@ local choice
   done
 }
 function update-da() {
-wget https://github.com/Retro-Devils/Devils-Pi/blob/main/Diablos-Arcade/files/da-version.sh -P /home/pi/Downloads
+wget https://github.com/Retro-Devils/Devils-Pi/blob/main/Diablos-Arcade/files/da-version -P /home/pi/Downloads
 sudo mv /home/pi/Downloads/da-version -f /usr/local/bin/da-version
 chmod 755 /usr/local/bin/da-version
 clear
