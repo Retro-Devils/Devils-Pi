@@ -30,8 +30,9 @@ local choice
     esac
   done
 }
-
 function update-da() {
+wget https://github.com/Retro-Devils/Devils-Pi/blob/main/Diablos-Arcade/files/da-version.sh -P /home/pi/Downloads
+sudo mv /home/pi/Downloads/da-version.sh -f /usr/local/bin/da-version
 clear
 echo ${bld}$(tput setaf 1) "----Backing Up & Getting New ES-Systems----"
 sleep 2
