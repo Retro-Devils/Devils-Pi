@@ -32,7 +32,10 @@ local choice
 }
 function update-da() {
 sudo rm -R /usr/local/bin/da-version
-sudo wget https://raw.githubusercontent.com/Retro-Devils/Devils-Pi/main/Diablos-Arcade/files/da-version -P /usr/local/bin/
+sudo wget https://github.com/Retro-Devils/Devils-Pi/raw/main/Diablos-Arcade/files/da-version -P /usr/local/bin/
+mv -f "$HOME"/.bashrc "$HOME"/.bashrc-backup
+wget https://github.com/Retro-Devils/Devils-Pi/raw/main/Diablos-Arcade/files/da.bashrc -P "$HOME"/
+mv -f "$HOME"/da.bashrc "$HOME"/.bashrc
 sudo chmod 755 /usr/local/bin/da-version
 clear
 echo ${bld}$(tput setaf 1) "----Backing Up & Getting New ES-Systems----"
