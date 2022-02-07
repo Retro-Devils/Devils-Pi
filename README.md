@@ -1,4 +1,4 @@
-# Devils-Pi V1
+# Devils-Pi V1.1
 
 # Whats This ?
 
@@ -20,9 +20,9 @@
 
   ## Whats SSH login? ##
 
-username:
+username:raspberry
 
-password:
+password:pi
 
   ## Retropie Version Used? ##
 
