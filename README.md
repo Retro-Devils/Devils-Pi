@@ -29,11 +29,8 @@ password:pi
 4.71
 
   ## Where Do I Download? ##
-  
-https://bit.ly/3AAdKbx
 
-
-https://drive.google.com/file/d/1-IVdOI8jFsMUQR8MNjPrUBmhtLpetP32/view
+https://archive.org/download/devils-pi/Retro-Devils-Pi-Base-v1.1.zip
 
   ## Images Built on Devils Pi? ##
 
