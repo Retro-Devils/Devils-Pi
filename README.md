@@ -35,4 +35,4 @@ https://archive.org/download/devils-pi/Retro-Devils-Pi-Base-v1.1.zip
   ## Images Built on Devils Pi? ##
 
 - Diablos Arcade 
-    Availible on Arcade Punks 
+   Download on Arcade Punks 
